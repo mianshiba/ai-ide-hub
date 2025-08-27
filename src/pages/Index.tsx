@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { ThemeProvider } from 'next-themes';
 import Header from '@/components/layout/Header';
 import HeroSection from '@/components/home/HeroSection';
@@ -50,9 +50,8 @@ const Index = () => {
   const featuredTools = tools.filter(tool => tool.featured);
 
   return (
-    <HelmetProvider>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        <div className="min-h-screen bg-background">
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <div className="min-h-screen bg-background">
           <Helmet>
             <title>AI IDE Tools - 最佳AI开发工具集合与实践指南</title>
             <meta 
@@ -251,7 +250,6 @@ const Index = () => {
           </footer>
         </div>
       </ThemeProvider>
-    </HelmetProvider>
   );
 };
 
