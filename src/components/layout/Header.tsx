@@ -17,9 +17,9 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
 
   const navigation = [
-    { name: '工具导航', href: '/tools' },
+    { name: '工具导航', href: '/' },
     { name: '更新日志', href: '/changelog' },
-    { name: '最佳实践', href: '/articles' },
+    { name: '最佳实践', href: '/best-practices' },
     { name: '对比分析', href: '/compare' },
   ];
 
